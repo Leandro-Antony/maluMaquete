@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A célula animal</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function mostra(organela) {
+          document.getElementById("title").innerText = organela;
+
+          if (organela === "nucleo") {
+              document.getElementById("foto").src = "https://s4.static.brasilescola.uol.com.br/be/2020/07/nucleo-celular.jpg";
+              document.getElementById("title").innerHTML = "Núcleo";
+              document.getElementById("txt").innerHTML = "O núcleo é a organela central da célula eucariótica, envolvido por uma dupla membrana chamada envoltório nuclear. Essa estrutura abriga o material genético (DNA), organizado em cromossomos, que contém as instruções para todas as atividades celulares. No interior do núcleo também está o núcleolo, responsável pela produção de ribossomos. A principal função do núcleo é controlar o funcionamento da célula, regulando o metabolismo, a síntese de proteínas e a divisão celular, funcionando como o “centro de comando” da célula.";
+          } else if (organela === "reticuloRugoso") {
+              document.getElementById("foto").src = "https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2022/06/Reticulo-Endoplasmatico-Liso-e-Rugoso.jpg";
+              document.getElementById("title").innerHTML = "Retículo Endoplasmático Rugoso";
+              document.getElementById("txt").innerHTML = "O RER é uma rede de túbulos e sacos achatados interligados, cobertos por ribossomos em sua superfície externa, o que lhe dá um aspecto rugoso. Ele está diretamente ligado à produção de proteínas que serão secretadas, incorporadas à membrana plasmática ou destinadas a outras organelas. Essas proteínas são sintetizadas pelos ribossomos e modificadas no interior do retículo. O RER também participa do transporte dessas proteínas para o complexo de Golgi.";
+          } else if (organela === "reticuloLiso") {
+              document.getElementById("foto").src = "./assets/liso.jpeg";
+              document.getElementById("title").innerHTML = "Retículo Endoplasmático Liso";
+              document.getElementById("txt").innerHTML = "Diferente do RER, o REL não possui ribossomos e tem aparência mais lisa. Sua principal função é a síntese de lipídios, como fosfolipídios e esteroides. Além disso, o REL está envolvido na desintoxicação de substâncias químicas, principalmente em células do fígado, e no armazenamento de cálcio, essencial para a contração muscular. Ele também auxilia no metabolismo de carboidratos.";
+          } else if (organela === "mitocondria") {
+              document.getElementById("foto").src = "https://s5.static.brasilescola.uol.com.br/img/2019/09/mitocondria.jpg";
+              document.getElementById("title").innerHTML = "Mitocôndria";
+              document.getElementById("txt").innerHTML = "A mitocôndria é uma organela com duas membranas, sendo a interna altamente dobrada em estruturas chamadas cristas mitocondriais, onde ocorre a respiração celular aeróbica. Sua principal função é a produção de ATP (adenosina trifosfato), que é a principal molécula de energia utilizada pelas células para realizar suas funções vitais. <br><br> Um fato importante é que as mitocôndrias têm DNA próprio (circular, semelhante ao das bactérias), ribossomos e capacidade de se dividir de forma independente da célula. Isso levou ao desenvolvimento da teoria da endossimbiose, proposta por Lynn Margulis, que sugere que as mitocôndrias eram bactérias de vida livre que foram englobadas por uma célula ancestral e estabeleceram uma relação simbiótica. Com o tempo, essa relação se tornou tão estreita que essas bactérias passaram a fazer parte da célula eucariótica. Isso explicaria suas semelhanças com bactérias atuais e sua autonomia parcial.";
+          } else if (organela === "ribossomo") {
+              document.getElementById("foto").src = "https://cdn-icons-png.flaticon.com/512/8046/8046020.png";
+              document.getElementById("title").innerHTML = "Ribossomo";
+              document.getElementById("txt").innerHTML = "Os ribossomos são estruturas pequenas, formadas por RNA ribossômico e proteínas, que não possuem membrana. Sua função principal é sintetizar proteínas a partir das instruções contidas no RNA mensageiro. Eles podem estar livres no citoplasma, produzindo proteínas que ficam na célula, ou aderidos ao retículo endoplasmático rugoso, produzindo proteínas que serão exportadas ou enviadas para outras organelas.";
+          } else if (organela === "lisossomo") {
+              document.getElementById("foto").src = "https://static.preparaenem.com/2023/01/ilustracao-da-estrutura-de-um-lisossomo.jpg";
+              document.getElementById("title").innerHTML = "Lisossomo";
+              document.getElementById("txt").innerHTML = "Os lisossomos são vesículas membranosas cheias de enzimas digestivas. Eles são responsáveis pela digestão intracelular, degradando partículas ingeridas, restos celulares e organelas danificadas (processo chamado de autofagia). Essa ação é essencial para manter o equilíbrio celular e remover componentes que não funcionam mais. Se rompidos acidentalmente, podem causar a autólise, ou seja, a digestão da própria célula.";
+          } else if (organela === "complexoGolgi") {
+              document.getElementById("foto").src = "https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/10/complexo-golgiense.jpg";
+              document.getElementById("title").innerHTML = "Complexo de Golgi";
+              document.getElementById("txt").innerHTML = "O complexo de Golgi é um conjunto de bolsas achatadas, empilhadas, e vesículas associadas. Ele atua como um “centro de empacotamento e distribuição” das células. Recebe proteínas e lipídios do retículo endoplasmático, modifica-os quimicamente (como a adição de carboidratos), classifica e empacota essas substâncias em vesículas para serem enviadas ao seu destino final, dentro ou fora da célula.";
+          } else if (organela === "membranaPlasmatica") {
+              document.getElementById("foto").src = "https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5fb7cc6197c802.89914436.jpg?lastEdited=1605880934&w=600&h=600&f=webp";
+              document.getElementById("title").innerHTML = "Membrana Plasmática";
+              document.getElementById("txt").innerHTML = "A membrana plasmática é uma bicamada lipídica com proteínas inseridas, que envolve toda a célula. Sua função principal é controlar a entrada e saída de substâncias, mantendo o equilíbrio interno (homeostase). Ela também é responsável por proteger a célula, comunicar-se com outras células por meio de receptores, e permitir o reconhecimento celular. Sua estrutura é fluida e dinâmica, conhecida como modelo do mosaico fluido.";
+          } else if (organela === "peroxissomo") {
+              document.getElementById("foto").src = "https://s2.static.brasilescola.uol.com.br/be/2023/09/estrutura-interna-peroxissomo.jpg";
+              document.getElementById("title").innerHTML = "Peroxissomo";
+              document.getElementById("txt").innerHTML = "O peroxissomo é uma organela envolvida por membrana que contém enzimas oxidativas. Ele atua principalmente na quebra de ácidos graxos e na neutralização de substâncias tóxicas, como o peróxido de hidrogênio (H₂O₂), que é convertido em água e oxigênio. Essa função é essencial para proteger a célula contra danos oxidativos. Também está envolvido no metabolismo de lipídios e de aminoácidos.";
+          } else if (organela === "citoplasma") {
+              document.getElementById("foto").src = "https://media.istockphoto.com/id/1851785045/es/foto/org%C3%A1nulos-dentro-de-una-c%C3%A9lula-eucariota-o-eucariota.jpg?s=612x612&w=0&k=20&c=gcVvoZ8pDrKvnwvUbYs9WIfBxCatKR3XwrRG36C-U8w=";
+              document.getElementById("title").innerHTML = "Citoplasma";
+              document.getElementById("txt").innerHTML = "O citoplasma é o material gelatinoso que preenche o interior da célula, entre a membrana plasmática e o núcleo. Ele é composto por citosol (a parte líquida), organelas e estruturas do citoesqueleto. Muitas reações químicas essenciais para a vida ocorrem no citoplasma, como a glicólise. Ele também serve como meio para o movimento de organelas, sustentação estrutural e distribuição de substâncias.";
+          }
+
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>A célula animal</h1>
+    </header>
+    <div id="botoes">
+      <button onclick="mostra('nucleo')">Núcleo</button>
+      <button onclick="mostra('reticuloRugoso')">
+        Retículo Endoplasmático Rugoso
+      </button>
+      <button onclick="mostra('reticuloLiso')">
+        Retículo Endoplasmático Liso
+      </button>
+      <button onclick="mostra('mitocondria')">Mitocôndria</button>
+      <button onclick="mostra('ribossomo')">Ribossomo</button>
+      <button onclick="mostra('lisossomo')">Lisossomo</button>
+      <button onclick="mostra('complexoGolgi')">Complexo de Golgi</button>
+      <button onclick="mostra('membranaPlasmatica')">
+        Membrana Plasmática
+      </button>
+      <button onclick="mostra('peroxissomo')">Peroxissomo</button>
+      <button onclick="mostra('citoplasma')">Citoplasma</button>
+    </div>
+
+    <div id="info">
+      <img id="foto" src="" alt="" />
+
+      <h1 id="title"></h1>
+      <p id="txt"></p>
+    </div>
+  </body>
+</html>
